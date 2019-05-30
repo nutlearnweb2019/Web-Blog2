@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- ทำให้บนมือถือซูมไม่ได้ (เฉพาะบางเบราเซอร์) -->
+    <!--number-based width or "device-width"-->
+    <meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <!-- Original -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="assets/images/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="msapplication-config" content="assets/images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#4b0082">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Trirong" rel="stylesheet">
+    <title>Blog</title>
+</head>
+
+<body>
+    <!-- Section: NavBar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-alpha fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/food_logo.png" width="50" height="50" class="d-inline-block align-center" alt=";logo_WB1">BGF-SDC
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarKey" aria-controls="navbarKey" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarKey">
+                <ul class="navbar-nav ml-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section: Page Title -->
+    <!-- <header data-jarallax data-speed="0.2" class="jarallax">
+            <img class="jarallax-img" src="assets/images/header1.jpeg" alt="img-Restr">
+        </header> -->
+    <header data-jarallax='{"speed":0.4}' class="page-title jarallax" style="background-image: url('https://images.unsplash.com/photo-1479044769763-c28e05b5baa5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=326b1b84920774a3a87ce05c0f55488e&auto=format&fit=crop&w=750&q=80');">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 font-weight-bold">Food & Drinks</h1>
+                    <p class="lead font-weight-bold">"นึกถึงอาหาร.. นึกถึงเรา"</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section: Blog -->
+        <section class="container py-4">
+            <div class="row pb-3">
+                <div class="col-12 text-center">
+                    <div class="btn-group-custom">
+                        <a href="blog.html?tag=all_menu">
+                            <button class="btn btn-danger active">เมนูทั้งหมด</button>
+                        </a>
+                        <a href="blog.html?tag=recommend_menu">
+                            <button class="btn btn-danger">เมนูแนะนำ</button>
+                        </a>
+                        <button class="btn btn-danger">เมนูโปรโมชั่น</button>
+                        <button class="btn btn-danger">เมนูด่วน</button>
+                        <button class="btn btn-danger">เมนูซุปเส้น</button>
+                        <button class="btn btn-danger">เมนูเครื่องดื่ม</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <section class="col-12 col-sm-6 col-md-4 p-2">
+                    <div class="card h-100">
+                        <a href="blog-detail1.html?id=01" class="warpper-card-img">
+                            <img class="card-img-top" src="assets/images/blog_sec/img1.jpg" alt="image_food">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Hamburger</h5>
+                            <p class="card-text">แฮมเบอร์เกอร์..</p>
+            
+                        </div>
+                        <div class="p-3">
+                            <a href="blog-detail1.html?id=01" class="btn btn-danger btn-block">Read more.. (อ่านต่อ)</a>
+                        </div>
+                    </div>
+                </section>
+            
+                <section class="col-12 col-sm-6 col-md-4 p-2">
+                    <div class="card h-100">
+                        <a href="#" class="warpper-card-img">
+                            <img class="card-img-top" src="assets/images/blog_sec/img2.jpg" alt="image_food">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Hot Dog</h5>
+                            <p class="card-text">ขนมปังไส้กรอก..</p>
+            
+                        </div>
+                        <div class="p-3">
+                            <a href="#" class="btn btn-danger btn-block">Read more.. (อ่านต่อ)</a>
+                        </div>
+                    </div>
+                </section>
+            
+                <section class="col-12 col-sm-6 col-md-4 p-2">
+                    <div class="card h-100">
+                        <a href="#" class="warpper-card-img">
+                            <img class="card-img-top" src="assets/images/blog_sec/img3.jpg" alt="image_food">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Cheese Dip</h5>
+                            <p class="card-text">เครื่องเคียงจุ่มชีส..</p>
+            
+                        </div>
+                        <div class="p-3">
+                            <a href="#" class="btn btn-danger btn-block">Read more.. (อ่านต่อ)</a>
+                        </div>
+                    </div>
+                </section>
+            
+                <section class="col-12 col-sm-6 col-md-4 p-2">
+                    <div class="card h-100">
+                        <a href="#" class="warpper-card-img">
+                            <img class="card-img-top" src="assets/images/blog_sec/img4.jpg" alt="image_food">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Sandwich</h5>
+                            <p class="card-text">แซนวิช..</p>
+            
+                        </div>
+                        <div class="p-3">
+                            <a href="#" class="btn btn-danger btn-block">Read more.. (อ่านต่อ)</a>
+                        </div>
+                    </div>
+                </section>
+            
+                <section class="col-12 col-sm-6 col-md-4 p-2">
+                    <div class="card h-100">
+                        <a href="#" class="warpper-card-img">
+                            <img class="card-img-top" src="assets/images/blog_sec/img5.jpg" alt="image_food">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Vegatable Salad</h5>
+                            <p class="card-text">สลัดผัก..</p>
+            
+                        </div>
+                        <div class="p-3">
+                            <a href="#" class="btn btn-danger btn-block">Read more.. (อ่านต่อ)</a>
+                        </div>
+                    </div>
+                </section>
+            
+                <section class="col-12 col-sm-6 col-md-4 p-2">
+                    <div class="card h-100">
+                        <a href="#" class="warpper-card-img">
+                            <img class="card-img-top" src="assets/images/blog_sec/img6.jpg" alt="image_food">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Steak</h5>
+                            <p class="card-text">สเต๊ก..</p>
+            
+                        </div>
+                        <div class="p-3">
+                            <a href="#" class="btn btn-danger btn-block">Read more.. (อ่านต่อ)</a>
+                        </div>
+                    </div>
+                </section>
+            
+            </div>
+        </section>
+
+    <!-- Section: About -->
+    <section data-jarallax='{"speed":0.4}' class="jarallax position-relative py-4" style="background-image: url('https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=719292378935d0f9168f11f9ad00558d&auto=format&fit=crop&w=667&q=80');">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img src="assets/images/food_logo.png" class="img-fluid" width="150" alt="logo_WB1">
+                    <h2 class="display-4 font-weight-bold text-blue">BGF-SDC Food</h2>
+                    <div class="star-rating">
+                        <span>☆</span>
+                        <span>☆</span>
+                        <span>☆</span>
+                        <span>☆</span>
+                        <span>☆</span>
+                        <div class="star-current" style="width: 92%;">
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Footer -->
+    <footer class="semi-footer p-3 text-center text-md-left">
+        <div class="row">
+            <div class="col-md-4">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/food_logo.png" width="50" height="50" class="d-inline-block align-center" alt=";logo_WB1">BGF-SDC
+                </a>
+                <p>
+                    <i class="fa fa-phone-square"></i> : 088-575-0571
+                    <br>
+                    <i class="fa fa-envelope-square"></i> : thanajsilrock@gmail.com
+                    <br>
+                    <i class="fa fa-map-marker"></i> : Nonthaburi
+                </p>
+                <a href="https://www.facebook.com/nanut.metalvel" target="_blank">
+                    <i class="fa fa-facebook-square fa-2x"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCEeE1KR4OwjEuLSSZc5QXmA/videos?view_as=subscriber" target="_blank">
+                    <i class="fa fa-youtube fa-2x"></i>
+                </a>
+            </div>
+
+            <div class="col-md-3">
+                <h4>Menu</h4>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-5">
+                <h4>Map</h4>
+                <div id="map"></div>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="footer-black">
+        <span>COPYRIGHT 2018
+            <a href="https://www.facebook.com/nanut.metalvel" target="_blank">TheNutEiei</a>
+            All Right Reserved
+        </span>
+
+    </footer>
+
+    <!-- On to Top -->
+    <section class="on-to-top">
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </section>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/jarallax/dist/jarallax.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsBCSYBEfrLpO_BSBM4rwn-3Zsp9NbqIM&callback=initMap">
+    </script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
